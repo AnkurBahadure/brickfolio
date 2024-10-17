@@ -62,10 +62,10 @@ const PropertyCard = () => {
                     <p className="text-xs text-gray-600">Developer</p>
                   </div>
                   <div className="border-l border-gray-300 h-6 mx-2"></div>
-                  <img src={time} alt="Another Corp." className="w-8 h-8 rounded" />
+                  <img src={time} alt="Another Corp." className="w-4 h-4 rounded" />
                   <div>
-                    <h2 className="text-sm font-semibold">Another Corp.</h2>
-                    <p className="text-xs text-gray-600">Designer</p>
+                    <h2 className="text-sm text-black text-opacity-30">5 Days ago</h2>
+                    {/* <p className="text-xs text-gray-600">Designer</p> */}
                   </div>
                 </div>
                 <div className="flex gap-x-2">
@@ -77,8 +77,6 @@ const PropertyCard = () => {
                   </button>
                 </div>
               </div>
-
-
             </div>
           </div>
         </div>
