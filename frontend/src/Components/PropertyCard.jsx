@@ -2,6 +2,8 @@ import propertyImage from "../assets/propertyImage.png";
 import data from '../assets/data.json'; // Make sure the path to the JSON file is correct
 import area from '../assets/area.png'
 import cost from '../assets/cost.png'
+import kumar from '../assets/kumar.png'
+import time from '../assets/time.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationPin } from '@fortawesome/free-solid-svg-icons';
 const PropertyCard = () => {
@@ -48,18 +50,35 @@ const PropertyCard = () => {
                   </div>
                 ))}
               </div>
-              <div className="flex gap-x-2 mr-8">
+              <div className="flex gap-x-2 px-6 mt-4">
                 <p className="text-sm  mt-4 bg-[#FFF6EF] text-[#FF7A00] px-2 rounded  w-auto">{property.emiInfo}</p>
                 <p className="text-sm  mt-4 bg-[#FDE7D7] text-black rounded-3xl px-2 font-semibold w-auto">{property.brokerage}</p>
               </div>
-              <div className="mt-8 flex justify-end gap-x-2 px-8">
-                <button className="bg-gray-200 text-gray-800 font-semibold py-1 px-2 rounded">
-                  View More
-                </button>
-                <button className="bg-orange-500 text-white font-semibold py-1 px-2 rounded">
-                  Enquire Now
-                </button>
+              <div className="mt-8 flex justify-between items-center px-8">
+                <div className="flex items-center gap-x-3">
+                  <img src={kumar} alt="Kumar Corp." className="w-8 h-8 rounded" />
+                  <div>
+                    <h2 className="text-sm font-semibold">Kumar Corp.</h2>
+                    <p className="text-xs text-gray-600">Developer</p>
+                  </div>
+                  <div className="border-l border-gray-300 h-6 mx-2"></div>
+                  <img src={time} alt="Another Corp." className="w-8 h-8 rounded" />
+                  <div>
+                    <h2 className="text-sm font-semibold">Another Corp.</h2>
+                    <p className="text-xs text-gray-600">Designer</p>
+                  </div>
+                </div>
+                <div className="flex gap-x-2">
+                  <button className="bg-gray-200 text-gray-800 font-semibold py-1 px-2 rounded">
+                    View More
+                  </button>
+                  <button className="bg-orange-500 text-white font-semibold py-1 px-2 rounded">
+                    Enquire Now
+                  </button>
+                </div>
               </div>
+
+
             </div>
           </div>
         </div>
