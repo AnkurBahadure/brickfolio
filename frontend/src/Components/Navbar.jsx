@@ -13,8 +13,8 @@ const locations = [
 
 const Navbar = ({ selectedValue, onChange }) => {
   return (
-    <nav className="w-full bg-white shadow">
-      <div className="container mx-auto p-4 flex justify-between items-center">
+    <nav className="w-full bg-[#FFF6EF] shadow">
+      <div className="container mx-auto p-4 flex justify-between">
         {/* Logo */}
         <div className="flex-shrink-0">
           <a href="/">
