@@ -1,6 +1,7 @@
 import propertyImage from "../assets/propertyImage.png";
 import data from '../assets/data.json'; // Make sure the path to the JSON file is correct
 import area from '../assets/area.png'
+import cost from '../assets/cost.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationPin } from '@fortawesome/free-solid-svg-icons';
 const PropertyCard = () => {
@@ -29,19 +30,21 @@ const PropertyCard = () => {
                 {property.location}
               </p>
               {/* <p className="mt-2 text-gray-500">{property.status}</p> */}
-              <p className="mt-4 text-black-500">Configuration</p>
-              <div className="mt-4 flex gap-4 px-8">
+              <p className="mt-4 px-4 text-black-500">Configuration</p>
+              <div className="mt-4 flex gap-4 px-4">
                 {property.configurations.map((config, configIndex) => (
-                  <div key={configIndex} className="border bg-[#FFF6EF] p-6 rounded-lg shadow-sm text-center">
+                  <div key={configIndex} className="border bg-[#FFF6EF] pr-12 pl-4 py-2 rounded-lg shadow-sm ">
                     <p className="text-2xl font-extrabold">{config.type}</p>
                     <div className="flex">
-                      <div className="flex  ml-2">
-                        <img className="object-fill mt-2 w-2 h-2 " src={area} alt="size" />
-                        </div>
-                      <span className="text-sm text-gray-600 ml-2">{config.size}</span>
+                      <div className="">
+                        <img className="object-fill mt-2 w-2 h-2" src={area} alt="size" />
+                      </div>
+                      <span className="text-sm text-gray-600 pl-2">{config.size}</span>
                     </div>
-                    
-                    <p className="text-orange-500 text-lg font-bold">{config.price}</p>
+                    <div className="flex">
+                      <img className="object-fill mt-2 w-3 h-3" src={cost} alt="size" />
+                      <p className="text-orange-500 text-lg font-bold pl-2">{config.price}</p>
+                    </div>
                   </div>
                 ))}
               </div>

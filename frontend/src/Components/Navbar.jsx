@@ -14,9 +14,9 @@ const locations = [
 const Navbar = ({ selectedValue, onChange }) => {
   return (
     <nav className="">
-      <div className="container p-4 flex justify-between items-center">
+      <div className="container mx-auto p-4 flex justify-between items-center">
         <div>
-          <div className="mr-4 ">
+          <div className="">
             <a href="/"><img src={logo} alt="Logo" className="h-10" /></a> 
           </div>
         </div>
@@ -42,7 +42,7 @@ const Navbar = ({ selectedValue, onChange }) => {
           </button>
         </div>
 
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden md:flex space-x-4">
           {/* Buttons */}
           <button className="bg-[#FDE7D7] border border-black hover:bg-[#F0E4D7] text-gray-700 py-2 px-4 rounded-md shadow">
             <FontAwesomeIcon className="mr-2" icon={faUser} />
