@@ -10,7 +10,7 @@ const Home = () => {
       <PropertyCard/>
 
 
-        <div className="hidden md:flex flex-col w-96">
+        <div className="hidden md:flex flex-col w-auto ">
           {/* Main Card */}
           <div className="bg-white shadow-lg border border-black rounded-lg p-4 mb-4 flex flex-col  items-center">
             {/* Image Section */}
@@ -21,7 +21,7 @@ const Home = () => {
                 className="w-full h-auto rounded"
               />
             </div>
-            <div className="flex space-y-2 w-40">
+            <div className="flex space-y-2 w-50">
               <img
                 src={ZEROBrokarage}
                 alt="Zero Card 1"
@@ -29,15 +29,15 @@ const Home = () => {
               />
             </div>
             {/* Text Section */}
-            <p className="text-center mt-5 font-semibold font-poppins">
-              We never charge on home purchases, offering you expert guidance
-              without any hidden fees or extra costs.
+            <p className="text-center font-semibold font-poppins p-8">
+              We never charge on home purchases, <br />offering you expert guidance
+              without any hidden fees or <br /> extra costs.
             </p>
           </div>
 
           {/* Enquire Now Form */}
-          <div className="bg-white shadow-lg border border-gray-300 rounded-lg p-4">
-            <h2 className="text-lg text-center font-bold mb-4">Need Help?</h2>
+          <div className="bg-white shadow-lg mt-12 border border-gray-300 rounded-lg p-4">
+            <h2 className="text-3xl text-center font-bold mb-4">Need Help?</h2>
             <h4 className="text-md text-center mb-6">
               Get in touch with Brickfolio Expert for free Consultation
             </h4>
